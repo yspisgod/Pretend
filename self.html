@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>假装名人</title>
+  </head>
+  <body>
+  <!-- 悬浮框（用于发送消息） -->
+  <div id="floatMenu" style="position: absolute;top: 0;left: 0;right: 0;">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <!-- 选择框（用于选择角色） -->
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="choic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                选择角色
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#"  id="sender">发送方</a>
+                <a class="dropdown-item" href="#"  id="receiver">接收方</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="input-group-prepend">
+          <!-- 选择框（用于选择图片） -->
+          <div class="dropdown">
+              <input type="text" placeholder="请填入图片网址" class="btn btn-primary dropdown-toggle" type="button" id="imgUrl" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              </button>
+              <div class="dropdown-menu" id="imgUrl-choice" aria-labelledby="dropdownMenuButton">
+              </div>
+          </div>
+        </div>
+
+        <div class="input-group-prepend">
+          <!-- 选择框（用于选择名字） -->
+          <div class="dropdown">
+              <input type="text" placeholder="请输入名字" class="btn btn-danger dropdown-toggle" type="button" id="speakman" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              </button>
+              <div class="dropdown-menu" id="speakman-choice" aria-labelledby="dropdownMenuButton">
+              </div>
+          </div>
+        </div>
+
+        <input id="message" type="text" placeholder="输入消息，按Enter键发送消息 <welcome to https://github.com/yspisgod/Pretend>" class="form-control box-sizing: border-box"  aria-label="" aria-describedby="basic-addon1">
+      </div>
+  </div>
+  </div>
+
+    <!-- 消息 -->
+    <div id="content" style="margin-top: 100px">
+     
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
